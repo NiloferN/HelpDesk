@@ -31,10 +31,10 @@ jobs:
    #     pip install pytest
    #     export PYTHONPATH=app
    #     pytest
-    - name: Deploy to Heroku
-      env:
-        HEROKU_API_TOKEN: ${{ secrets.HEROKU_API_TOKEN }}
-        HEROKU_APP_NAME: ${{ secrets.HEROKU_APP_NAME }}
-      if: github.ref == 'refs/heads/master' && job.status == 'success'
-      run: |
-        http://helpdesk-analysis.herokuapp.com/
+    #- name: Deploy to Heroku
+    #  env:
+    #    HEROKU_API_TOKEN: ${{ secrets.HEROKU_API_TOKEN }}
+    #    HEROKU_APP_NAME: ${{ secrets.HEROKU_APP_NAME }}
+    #  if: github.ref == 'refs/heads/master' && job.status == 'success'
+    #  run: |
+     #   http://helpdesk-analysis.herokuapp.com/
