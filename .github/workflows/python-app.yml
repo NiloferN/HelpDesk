@@ -37,4 +37,4 @@ jobs:
         HEROKU_APP_NAME: ${{ secrets.HEROKU_APP_NAME }}
       if: github.ref == 'refs/heads/master' && job.status == 'success'
       run: |
-        https://service-analyss.herokuapp.com/
+        http://helpdesk-analysis.herokuapp.com/
