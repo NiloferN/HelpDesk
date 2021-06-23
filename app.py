@@ -200,14 +200,13 @@ def agent():
                 flash("Unable to create ticket","danger")
             return redirect(url_for('agent'))
         elif request.form.get("updatebtn")=="Update":
-            cusphone=request.form["cusphone"]
             cusid=request.form["cusid"]
             now1=datetime.datetime.now()
             today1=date.today()
             try:
-                up=db.child("Tickets").order_by_child("PHONE NO").equal_to(cusphone).get()
+                up=db.child("Tickets").order_by_child("CUSTOMER ID").equal_to(cusid).get()
                 for i in up.each():
-                    if i.val()["PHONE NO"]==cusphone and i.val()["CUSTOMER ID"]==cusid:
+                    if i.val()["CUSTOMER ID"]==cusid:
                         db.child("Tickets").child(i.key()).update({"STATUS":"Closed","CLOSED":str(now1),"DATECLOSED":str(today1)})
                     else:
                         pass
