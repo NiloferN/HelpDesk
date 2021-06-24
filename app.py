@@ -27,6 +27,7 @@ firebaseconfig={
 }
 firebase=pyrebase.initialize_app(firebaseconfig)
 db=firebase.database()
+
 opencount=len(db.child("Tickets").order_by_child("STATUS").equal_to("Opened").get().val())
 closecount=len(db.child("Tickets").order_by_child("STATUS").equal_to("Closed").get().val())
 medi=len(db.child("Tickets").order_by_child("SEVERITY").equal_to("Medium").get().val())

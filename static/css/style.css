@@ -3,7 +3,7 @@
 body
 {
     /*background: url('../images/bg.png');*/
-    background: linear-gradient(rgba(12, 12, 12,0.1),rgba(12, 12, 12,0.1)),url('../images/bgimg.svg');
+    background: linear-gradient(rgba(12, 12, 12,0.1),rgba(12, 12, 12,0.1)),url('../images/bg1.jpg');
     background-size: cover;
 }
 input[type="text"]

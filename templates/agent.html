@@ -65,56 +65,51 @@
                                     <!-- <input type="text" class="form-control" name="Pname" placeholder="Product Name" required><br> -->
                                     <!-- <input type="text" class="form-control" name="Mname" placeholder="Model Name" required><br> -->
                                     <label>Product Category</label>
-                                        <select name="Mname" id="id_Mname" data-cate-id='id_cate' class='dependent-selects__Mname form-control'>
-                                    <option value="">--------</option>
-                                    <option value="one" data-cate-options="1|#2|#3|#4|#5|#6|#7|#8|#9|#10">Phone</option>
-                                    <option value="two" data-cate-options="11|#12|#13|#14|#15|#16|#17|#18|#19|#20">Laptop</option>
-                                    <option value="three" data-cate-options="21|#22|#23|#24|#25|#26|#27|#28">Tablet</option>
-                                    <option value="four" data-cate-options="29|#30|#31|#32|#33|#34|#35">Desktop</option>
-                                        </select>
-                                    <br>
+                                    <select name="cate" class="selectpicker form-control">
+                                        <option value="Phone">Phone</option>
+                                        <option value="Tablet">Tablet</option>
+                                        <option value="Computer">Laptop</option>
+                                        <option value="Computer">Desktop</option>
+                                    </select>
                                     <label>Model</label>
-                                        <select name="cate" id="id_cate" class='dependent-selects__cate form-control'>
-                                                <option value="1" >Ace M31 Prime</option>
-                                                <option value="2" >Ace Galaxy S4</option>
-                                                <option value="3" >Ace Galaxy S6</option>
-                                                <option value="4" >Ace 6s+</option>
-                                                <option value="5" >Ace 5</option>
-                                                <option value="6" >Ace 5s</option>
-                                                <option value="7" >Ace X3</option>
-                                                <option value="8" >Ace 6</option>
-                                                <option value="9" >Ace Galaxy S9</option>
-                                                <option value="10" >Ace Galaxy S10</option>
-                                                <option value="11" >Ace Notebook 1.0</option>
-                                                <option value="12" >Ace Notebook 2.0</option>
-                                                <option value="13" >Ace Notebook 2.0 Lite</option>
-                                                <option value="14" >Ace Lappy 1126</option>
-                                                <option value="15" >Ace TouchPad 2000</option>
-                                                <option value="16" >Ace Flare S6</option>
-                                                <option value="17" >Ace Infinite</option>
-                                                <option value="18" >Ace Flare S2</option>
-                                                <option value="19" >Ace SparX</option>
-                                                <option value="20" >Ace SparX Pro</option>
-                                                <option value="21" >Ace Tablet 500</option>
-                                                <option value="22" >Ace Tablet 500 Mini</option>
-                                                <option value="23" >Ace Tab E750</option>
-                                                <option value="24" >Ace Tab E750 Pro</option>
-                                                <option value="25" >Ace NotePad 2</option>
-                                                <option value="26" >Ace NotePad 4</option>
-                                                <option value="27" >Ace Swift F20</option>
-                                                <option value="28" >Ace Swift F20 Lite</option>
-                                                <option value="29" >Ace PC 3699</option>
-                                                <option value="30" >Ace AZ Desktop</option>
-                                                <option value="31" >Ace Quantum Core 5278</option>
-                                                <option value="32" >Ace Zeus V01</option>
-                                                <option value="33" >Ace A700</option>
-                                                <option value="34" >Ace Pro 1000</option>
-                                                <option value="35" >Ace Pro 2000</option>
-                                        </select>
-
-                                        <script src='dependent-selects.js'></script>
-                                <br>
-                                    <textarea cols="5" class="form-control" name="cissue" placeholder="Write issue description">Issue Description</textarea><br>
+                                    <select name="Mname" class="selectpicker form-control">
+                                        <option value="Ace M31 Prime">Ace M31 Prime</option>
+                                        <option value="Ace Galaxy S4">Ace Galaxy S4</option>
+                                        <option value="Ace Galaxy S6">Ace Galaxy S6</option>
+                                        <option value="Ace 6s+">Ace 6s+</option>
+                                        <option value="Ace 5">Ace 5</option>
+                                        <option value="Ace 5s">Ace 5s</option>
+                                        <option value="Ace 6">Ace 6</option>
+                                        <option value="Ace X3">Ace X3</option>
+                                        <option value="Ace Galaxy S9">Ace Galaxy S9</option>
+                                        <option value="Ace Galaxy S10">Ace Galaxy S10</option>
+                                        <option value="Ace TouchPad 2000">Ace TouchPad 2000</option>
+                                        <option value="Ace Notebook 2.0">Ace Notebook 2.0</option>
+                                        <option value="Ace Notebook 1.0">Ace Notebook 1.0</option>
+                                        <option value="Ace Lappy 1126">Ace Lappy 1126</option>
+                                        <option value="Ace Notebook 2.0 Lite">Ace Notebook 2.0 Lite</option>
+                                        <option value="Ace Flare S6">Ace Flare S6</option>
+                                        <option value="Ace Infinite">Ace Infinite</option>
+                                        <option value="Ace Flare S2">Ace Flare S2</option>
+                                        <option value="Ace SparX">Ace SparX</option>
+                                        <option value="Ace SparX Pro">Ace SparX Pro</option>
+                                        <option value="Ace Tablet 500">Ace Tablet 500</option>
+                                        <option value="Ace Tablet 500">Ace Tablet 500 Mini</option>
+                                        <option value="Ace Tab E750">Ace Tab E750</option>
+                                        <option value="Ace Tab E750 Pro">Ace Tab E750 Pro</option>
+                                        <option value="Ace NotePad 2">Ace NotePad 2</option>
+                                        <option value="Ace NotePad 4">Ace NotePad 4</option>
+                                        <option value="Ace Swift F20">Ace Swift F20</option>
+                                        <option value="Ace Swift F20 Lite">Ace Swift F20 Lite</option>
+                                        <option value="Ace PC 3699">Ace PC 3699</option>
+                                        <option value="Ace AZ Desktop">Ace AZ Desktop</option>
+                                        <option value="Ace Quantum Core 5278">Ace Quantum Core 5278</option>
+                                        <option value="Ace Zeus V01">Ace Zeus V01</option>
+                                        <option value="Ace A700">Ace A700</option>
+                                        <option value="Ace Pro 1000">Ace Pro 1000</option>
+                                        <option value="Ace Pro 2000">Ace Pro 2000</option>
+                                    <br>
+                                    <textarea cols="5" class="form-control" name="cissue" placeholder="Write issue description"></textarea><br>
                                     <!-- <input type="text" class="form-control" name="seve" placeholder="severity"> -->
                                     <select name="seve" class="selectpicker form-control">
                                         <option value="Medium">Medium</option>
