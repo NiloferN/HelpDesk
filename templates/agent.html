@@ -17,9 +17,9 @@
     <section id="navsec">
         <div class="row">
             <div class="col-lg-4 col-sm-4 col-4 text-center">
-                <img src="../static/images/crescent2.png" width="40px" height="40px">
+                <img src="../static/images/logo1.png" width="40px" height="40px">
             </div>
-            <div class="col-lg-8 col-sm-8 col-8 text-right">
+            <div class="col-lg-8 col-sm-8 col-8 text-right" id="logout">
                 <a href="/">Log Out</a>
             </div>
         </div>
@@ -33,7 +33,7 @@
                 <a href="#" style="text-decoration: none;color:white"><i class="fa fa-user">&nbsp;&nbsp;{{signas}}</i></a><br><br>
                 <a href="#" style="text-decoration: none;color:white"><i class="fa fa-home">&nbsp;&nbsp;Home</i></a><br><br>
                 <a href="#" style="text-decoration: none;color:white"><i class="fa fa-line-chart" style="color: white;">&nbsp;&nbsp;Analysis</i></a><br><br>
-                <a href="#" style="text-decoration: none;color:white">Result</a><br><br>
+                
             </div>
             <div class="col-lg-10 col-sm-10 col-10" id="cont_right">
                 <br>
@@ -135,9 +135,7 @@
                     <div class="col-lg-4 col-sm-4 col-4 text-center">
                         <button class="btn btn-primary" data-toggle="modal" data-target="#myModal2">Ticket Update</button>
                     </div>
-                    <div class="col-lg-4 col-sm-4 col-4 text-center">
-                        <button class="btn btn-primary">Report</button>
-                    </div>
+                   
                 </div>
                 <!---modal2-->
                 <div class="modal fade" id="myModal2">
@@ -225,12 +223,12 @@
                     <table class="table table-hover table-sm ">
                         <thead class="thead-blue">
                         <tr>
-                            <th>Customer id</th>
+                            <th>Customer Id</th>
                             <th>Product Name</th>
-                            <th>Model Name</th>
                             <th>Product Category</th>
-                            <th>issue</th>
-                            <th>issue severity</th>
+                            <th>Issue</th>
+                            <th>Issue Severity</th>
+                            <th>Status</th>
                         </tr>
                         </thead>
                         <tbody>
